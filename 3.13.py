@@ -81,3 +81,4 @@ if int_spins > 1:
 degrees = int_spins * 360
 
 print("You are facing", degrees, "degrees relative to north")
+#semantic error
