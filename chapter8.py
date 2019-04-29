@@ -8,12 +8,17 @@ def course_grader(test_scores):
     average = sum(test_scores) / len(test_scores)
     if average < 70:
         return("fail")
-    elif average > 69:
-        for i in test_scores:
-            if i < 49:
+    else:
+        i = 0
+        while test_scores:
+            i += 1
+            if test_scores[i] < 49:
+                return ("fail")
                 break
-                return("fail")
             else:
                 return("pass")
+
+
+
 
 # import code; code.interact(local=dict(globals(), **locals()))
